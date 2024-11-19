@@ -10,7 +10,7 @@ Questo progetto implementa una proiezione prospettica di video equirettangolari,
    - **Longitudine (THETA)** e **Latitudine (PHI)**: Modificabili per cambiare la visualizzazione del video.
 3. **Schermo Intero**: Supporta la visualizzazione su finestra a schermo intero con OpenCV, adattando la finestra alla risoluzione del video.
 4. **Controlli in Tempo Reale**: È possibile:
-   - Aumentare o diminuire l'FOV (tasti 'o' e 'i').
+   - Aumentare o diminuire l'FOV (tasti '+' e '-').
    - Muovere la visualizzazione del video tramite i tasti 'a', 'd', 's', 'w' (movimento orizzontale e verticale).
    - Uscire premendo 'q'.
 
@@ -26,19 +26,38 @@ Puoi installare le dipendenze richieste tramite `pip`:
 pip install opencv-python numpy
 ```
 
-# Equirectangular Video Transformation
+## Installazione
 
-## Overview
+1. Clona la repository:
+   git clone https://github.com/Lens3010/Coordinate-Transformation-From-Equirectangular-to-Spherical-Space.git
 
-This project provides a Python tool to transform equirectangular (360-degree) video projections into perspective views based on user-defined parameters such as Field of View (FOV), longitude (THETA), and latitude (PHI). It supports real-time video processing and allows for dynamic interaction through keyboard inputs to adjust the view. The tool uses OpenCV for video manipulation and numpy for mathematical operations.
+# Equirectangular Video Projection
+
+This project implements a perspective projection of equirectangular videos, allowing to display 360° videos in a customizable window with adjustable field of view (FOV), longitude (THETA) and latitude (PHI) in real time. It uses OpenCV for video management and geometric transformations.
 
 ## Features
 
-- **Interactive Perspective Transformation**: Users can adjust the perspective of equirectangular video by modifying the Field of View (FOV), longitude (THETA), and latitude (PHI) through keyboard controls.
-- **Real-time Video Processing**: The program continuously processes and displays frames from a video file, applying the necessary transformations.
-- **Flexible Video Input**: The tool supports any equirectangular video file, with the ability to handle different resolutions.
-- **Transformation Functions**: The code includes functions for converting 3D space coordinates to longitude-latitude (spherical coordinates) and for mapping those coordinates to a 2D perspective projection.
+1. **Equirectangular Projection**: Converts equirectangular video into a perspective view, using longitude and latitude coordinates to map pixels correctly on the 3D scene.
+2. **Interactive Interface**: Allows the user to modify in real time:
+- **Field of View (FOV)**: Changeable between 1° and 180°.
+- **Longitude (THETA)** and **Latitude (PHI)**: Changeable to change the video display.
+3. **Full Screen**: Supports full screen window display with OpenCV, adapting the window to the video resolution.
+4. **Real Time Controls**: You can:
+- Increase or decrease the FOV ('+' and '-' keys).
+- Move the video display with the 'a', 'd', 's', 'w' keys (horizontal and vertical movement).
+- Exit by pressing 'q'.
 
+## Requirements
+
+- Python 3.x
+- OpenCV (cv2)
+- NumPy
+
+You can install the required dependencies via `pip`:
+
+```bash
+pip install opencv-python numpy
+```
 ## Installation
 
 1. Clone the repository:
