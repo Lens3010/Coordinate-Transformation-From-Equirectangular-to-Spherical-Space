@@ -31,6 +31,11 @@ pip install opencv-python numpy
 1. Clona la repository:
    git clone https://github.com/Lens3010/Coordinate-Transformation-From-Equirectangular-to-Spherical-Space.git
 
+
+
+
+   
+
 # Equirectangular Video Projection
 
 This project implements a perspective projection of equirectangular videos, allowing to display 360° videos in a customizable window with adjustable field of view (FOV), longitude (THETA) and latitude (PHI) in real time. It uses OpenCV for video management and geometric transformations.
